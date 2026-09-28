@@ -35,4 +35,11 @@ sudoku(Row, Col, Value) :-
    sudoku(Row2, Col, Value),
    Row1 != Row2.
 
+% Assign each cell to its 2x2 subgrid.
+subgrid(Row, Col, Group) :-
+    Row = 1..4,
+    Col = 1..4,
+    Group = 1 + ((Row - 1) / 2) * 2 + ((Col - 1) / 2).
+
 #show sudoku/3.
+#show subgrid/3.
