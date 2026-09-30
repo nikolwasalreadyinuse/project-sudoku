@@ -1,4 +1,4 @@
-% Sudoku Solver - Question 1a
+% Sudoku Solver - Question 1c
 
 % Initial clues must not contain duplicate values
 % in the same row or column.
